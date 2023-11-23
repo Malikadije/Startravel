@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/editor.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="narrow-jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+		<header class="header">
+			<div class="container">
+				<nav class="navbar">
+					<div class="logo">
+						<h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MULAI PERJALANAN</font></font></h1>
+						<img src="lensa.jpg" alt="Logo perjalanan MULAI">
+					</div>
+					<button class="menu-button" id="menu-button" onclick="toggleMenuButton()">
+						<i data-feather="menu"></i>
+					</button>
+					<ul class="navigation-list" id="menu-list">
+						<li><a href="#hero" onclick="setTitle(this)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rumah</font></font></a></li>
+						<li><a href="#our-package" onclick="setTitle(this)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paket kami</font></font></a></li>
+						<li><a href="#call-us" onclick="setTitle(this)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hubungi Kami</font></font></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="hero" id="hero">
+				<div class="hero-slider" id="hero-slider">
+					<img id="slide1" src="banduung.jpg" alt="" style="width:500px;height:400px;">
+					<img id="slide2" src="laut.jpg" alt="" style="width:500px;height:400px;">
+					<img id="slide3" src="japan.jpg" alt="" style="width:500px;height:400px;">
+					<img id="slide4" src="singapur.jpg" alt="" style="width:500px;height:400px;">
+					<img id="slide5" src="surabaya.jpg" alt="" style="width:500px;height:400px;">
+	
+				</div>
+				<div class="hero-wrapper">
+					<h1 class="main-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agen Perjalanan Tepercaya Anda</font></font></h1>
+					<p class="hero-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kebahagiaan Anda adalah kebahagiaan kami</font></font></p>
+					<button class="button" onclick="getStartButton()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Memulai!</font></font></button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="about-contact" id="about">
+					<div class="about">
+						<img src="bali.jpg" alt="Sebuah pantai di Bali saat senja, dengan beberapa orang sedang bermain" class="about-img">
+						<p class="about-caption"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Liburan jadi lebih menyenangkan karena STARTravel memberikan yang terbaik pada pengguna</font></font></p>
+						<div class="about-author">
+							<img src="dinda.JPG" alt="" style="width:500px;height:400px;" class="author-img">
+							<div class="author-data">
+								<div class="author-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Malika Dinda Juwanti S.Si</font></font></div>
+								<div class="author-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Insinyur Perangkat Lunak, 23</font></font></div>
+							</div>
+						</div>
+						<hr class="border">
+						<div class="feature">
+							<h2 class="subsection-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Beberapa keuntungan yang akan Anda dapatkan dengan menggunakan jasa kami:</font></font></h2>
+							<div class="feature-list">
+								<div class="feature-item">
+									<div class="feature-icon">
+										<i data-feather="globe"></i>
+									</div>
+									<div class="feature-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tersedia perjalanan ke banyak tempat destinasi terbaik di dunia</font></font></div>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">
+										<i data-feather="globe"></i>
+									</div>
+									<div class="feature-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pemesanan dan pembayaran yang mudah, cepat, dan dapat dilakukan kapan saja dan dimana saja</font></font></div>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">
+										<i data-feather="globe"></i>
+									</div>
+									<div class="feature-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Banyak sekali Penawaran dan Diskon yang menarik untuk Perjalanan Anda selanjutnya</font></font></div>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">
+										<i data-feather="globe"></i>
+									</div>
+									<div class="feature-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uang kembali hingga 90% jika Anda membatalkan melakukan perjalanan</font></font></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<h2 class="subsection-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hubungi kami</font></font></h2>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bintang akan menghubungi Anda 1x24 jam setelah data Anda kami terima</font></font></p>
+						<form class="contact-form" name="contact-form" onsubmit="return validateForm()">
+							<div class="form-field">
+								<label for="name" class="input-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Namamu:</font></font></label>
+								<input type="text" id="name" name="name" class="input-field" placeholder="Nama depan dan nama belakang" oninput="fillInput('name')">
+								<p class="error-msg" id="name-error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Silakan isi nama Anda</font></font></p>
+							</div>
+							<div class="form-field">
+								<label for="email" class="input-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alamat email:</font></font></label>
+								<input type="text" id="email" name="email" class="input-field" placeholder="contoh@email.com" oninput="fillInput('email')">
+								<p class="error-msg" id="email-error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Silakan isi email Anda dengan format yang benar</font></font></p>
+							</div>
+							<div class="form-field">
+								<label for="interest" class="input-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apa yang Anda minati?</font></font></label>
+								<select id="interest" name="interest" class="input-field" oninput="selectInterest()">
+									<option value="none" selected="" disabled=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pilih opsi</font></font></option>
+									<option value="option 1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Destinasi Pantai (Berenang/Berselancar)</font></font></option>
+									<option value="option 2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tujuan Gunung (Hiking)</font></font></option>
+									<option value="option 3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Destinasi Hutan (Berkemah/Memancing)</font></font></option>
+								</select>
+								<p class="error-msg" id="interest-error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Silakan pilih satu minat</font></font></p>
+							</div>
+							<button type="submit" class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mengirim</font></font></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="package" id="our-package">
+				<div class="package-banner">
+					<div class="container">
+						<h2 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paket kami</font></font></h2>
+					</div>
+				</div>
+				<div class="container">
+					<div class="package-list">
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="compass"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bali</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kunjungi cagar budaya, kuliner, pantai, dan tempat wisata menarik lainnya di Bali</font></font></p>
+							</div>
+						</div>
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="compass"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jepang</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kunjungi cagar alam buaya, kuliner, pantai, dan tempat wisata menarik lainnya di Jepang</font></font></p>
+							</div>
+						</div>
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="compass"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Singapura</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kunjungi cagar budaya, bersejarah, dan tempat wisata menarik lainnya di Singapura</font></font></p>
+							</div>
+						</div>
+					</div>
+					<hr class="border">
+					<div class="package-list">
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="star"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Destinasi Gunung</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lakukan hiking ke atas gunung atau camping di atas gunung</font></font></p>
+							</div>
+						</div>
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="star"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pantai</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lakukan berenang di sekitar pantai atau berselancar di ombak</font></font></p>
+							</div>
+						</div>
+						<div class="package-item">
+							<div class="package-icon">
+								<i data-feather="star"></i>
+							</div>
+							<div class="package-content">
+								<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hutan</font></font></h3>
+								<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lakukan berkemah bersama hantu hutan, seperti mbak kun</font></font></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cta" id="call-us">
+				<div class="container">
+					<h2 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bicaralah dengan Kami</font></font></h2>
+					<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ingin memesan perjalanan? </font><font style="vertical-align: inherit;">Ada kendala yang perlu dibantu? </font><font style="vertical-align: inherit;">Silakan hubungi kami dengan menekan tombol di bawah ini</font></font></p>
+					<button class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hubungi Kami</font></font></button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="logo">
+					<img src="logo.png" alt="Logo perjalanan MULAI" width="192">
+				</div>
+				<ul class="footer-navigation">
+					<li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ketentuan Layanan</font></font></a></li>
+					<li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kebijakan pribadi</font></font></a></li>
+				</ul>
+				<div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2023 Maljee</font></font></div>
+			</div>
+		</footer>
+
+		<script>
+			feather.replace();
+		</script>
+		<script src="./js/validation.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/slideShow.js"></script>
+	</body>
+</html>
